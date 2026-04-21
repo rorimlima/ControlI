@@ -1,18 +1,24 @@
 {
   "name": "control-igreja",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "cap:sync": "npx cap sync",
+    "cap:android": "npx cap open android",
+    "cap:ios": "npx cap open ios"
   },
   "devDependencies": {
-    "typescript": "~6.0.2",
     "vite": "^8.0.9"
   },
   "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/ios": "^7.0.0",
     "@supabase/supabase-js": "^2.104.0",
     "chart.js": "^4.5.1",
     "jspdf": "^4.2.1"
